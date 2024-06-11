@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp_Suma.MainPage">
+
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="Funciones Matematicas"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Entry x:Name="EntryNumero1" 
+               Placeholder="Ingrese el primer número" 
+               Keyboard="Numeric" 
+               HorizontalOptions="FillAndExpand" />
+
+            <Entry x:Name="EntryNumero2" 
+               Placeholder="Ingrese el segundo número" 
+               Keyboard="Numeric" 
+               HorizontalOptions="FillAndExpand" />
+
+            <Button Text="Sumar" 
+                Clicked="OnSumarClicked" 
+                HorizontalOptions="Center" 
+                VerticalOptions="CenterAndExpand" />
+
+            <Button Text="Restar" 
+                Clicked="OnRestarClicked" 
+                HorizontalOptions="Center" 
+                VerticalOptions="CenterAndExpand" />
+
+            <Button Text="Multiplicar" 
+                Clicked="OnMulClicked" 
+                HorizontalOptions="Center" 
+                VerticalOptions="CenterAndExpand" />
+
+            <Button Text="Division" 
+                Clicked="OnDivClicked" 
+                HorizontalOptions="Center" 
+                VerticalOptions="CenterAndExpand" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
